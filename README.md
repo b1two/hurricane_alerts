@@ -1,5 +1,5 @@
 # hurricane_alerts
-Sends daily sms about current atlantic hurricane situation and Kick'em Jenny volcano alerts.
+Sends daily SMS about current atlantic hurricane situation and Kick'em Jenny volcano alerts with Bouygues Telecom SMS service.
 
 ## Setup
 ```
@@ -19,3 +19,6 @@ Add this line for running the script every day at 3pm :
 ```
 0 15 * * * <path_to_hurricane.py> > <path_to_log_file_if_desired_or_/dev/null> 2>&1
 ```
+
+## Thanks to
+Thanks to abdel-elbel for providing the script to use easily the Bouygues Telecom SMS service. His repo : [github.com/abdel-elbel/bouygues_pysms](github.com/abdel-elbel/bouygues_pysms)
