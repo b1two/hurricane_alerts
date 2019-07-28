@@ -55,9 +55,9 @@ def main():
         client = BouyguesClient(MY_NAME, MY_PHONE_NUMBER, MY_PASSWORD)
 
         if not hurricane:
-            client.send("Pas de cyclone prévu dans les 5 prochains jours. Echelle " + status_volcano + "/5 Kick'em Jenny.", TO)
+            client.send("Pas de cyclone prévu dans les 5 prochains jours. Echelle " + status_volcano + "/5 Kick'em Jenny.", RECIPIENTS)
         else:
-            client.send("Attention, il peut y avoir un cyclone de prévu dans les 5 prochains jours. Echelle " + status_volcano + "/5 Kick'em Jenny.", TO)
+            client.send("Attention, il peut y avoir un cyclone de prévu dans les 5 prochains jours. Echelle " + status_volcano + "/5 Kick'em Jenny.", RECIPIENTS)
 
 
 if __name__ == "__main__":
