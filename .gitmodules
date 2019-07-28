@@ -1,0 +1,3 @@
+[submodule "bouygues_pysms"]
+	path = bouygues_pysms
+	url = git@github.com:abdel-elbel/bouygues_pysms.git
