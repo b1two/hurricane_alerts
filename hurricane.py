@@ -32,8 +32,11 @@ def main():
     response_hurricane = session_hurricane.get("https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=5")
     matches_hurricane = re.search(r"For the North Atlantic\.\.\.Caribbean Sea and the Gulf of Mexico:\n\n([ -~\s]*)\n\n\$\$",
                         response_hurricane.content.decode('utf-8'))
-    infos_hurricane = matches_hurricane.groups()[0]
-    hurricane = infos_hurricane != "Tropical cyclone formation is not expected during the next 5 days."
+    if matches_hurricane:
+        infos_hurricane = matches_hurricane.groups()[0]
+        hurricane = infos_hurricane != "Tropical cyclone formation is not expected during the next 5 days."
+    else:
+        hurricane = True
 
     """ Retrieving data for Kick'em Jenny """
     session_volcano = requests.Session()
