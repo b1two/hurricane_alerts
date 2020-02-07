@@ -21,4 +21,4 @@ Add this line for running the script every day at 3pm :
 ```
 
 ## Thanks to
-Thanks to abdel-elbel for providing the script to use easily the Bouygues Telecom SMS service. His repo : [github.com/abdel-elbel/bouygues_pysms](github.com/abdel-elbel/bouygues_pysms)
+Thanks to abdel-elbel for providing the script to use easily the Bouygues Telecom SMS service. His repo : [github.com/abdel-elbel/bouygues_pysms](https://github.com/abdel-elbel/bouygues_pysms)
